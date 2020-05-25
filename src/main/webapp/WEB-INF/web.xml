@@ -1,0 +1,141 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+  <servlet>
+  	<servlet-name>HomeServlet</servlet-name>
+  	<display-name>HomeServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.equifinder.HomeServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>IndexServlet</servlet-name>
+  	<display-name>IndexServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.equifinder.servlet.HomeServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>AddServlet</servlet-name>
+  	<display-name>AddServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.equifinder.servlet.AddServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>FindServlet</servlet-name>
+  	<display-name>FindServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.equifinder.servlet.FindServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>GalleryServlet</servlet-name>
+  	<display-name>GalleryServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.equifinder.servlet.GalleryServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>ConfirmationServlet</servlet-name>
+  	<display-name>ConfirmationServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.equifinder.servlet.ConfirmationServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>SpinnerServlet</servlet-name>
+  	<display-name>SpinnerServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.equifinder.servlet.SpinnerServlet</servlet-class>
+  </servlet>
+  <!-- <servlet>
+    <servlet-name>InitServlet</servlet-name>
+  	<display-name>InitServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.equifinder.servlet.InitServlet</servlet-class>
+  	<init-param>
+  	  <param-name>log4j-fichier-config</param-name>
+  	  <param-value>WEB-INF/classes/log4j.properties</param-value>
+  	</init-param>
+  	<init-param>
+  	  <param-name>log4j-chemin-log</param-name>
+  	  <param-value>WEB-INF/log</param-value>
+  	</init-param>
+  	<load-on-startup>1</load-on-startup>
+  </servlet> -->
+  <servlet>
+  	<servlet-name>ErrorServlet</servlet-name>
+  	<display-name>ErrorServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.equifinder.servlet.error.ErrorServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>ListServlet</servlet-name>
+  	<display-name>ListServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.equifinder.servlet.ListServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>HomeServlet</servlet-name>
+  	<url-pattern>/HomeServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>IndexServlet</servlet-name>
+  	<url-pattern>/Index</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>AddServlet</servlet-name>
+  	<url-pattern>/AddServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>FindServlet</servlet-name>
+  	<url-pattern>/FindServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>GalleryServlet</servlet-name>
+  	<url-pattern>/GalleryServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>ConfirmationServlet</servlet-name>
+  	<url-pattern>/ConfirmationServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>SpinnerServlet</servlet-name>
+  	<url-pattern>/SpinnerServlet</url-pattern>
+  </servlet-mapping>
+  <!-- <servlet-mapping>
+  	<servlet-name>InitServlet</servlet-name>
+  	<url-pattern>/InitServlet</url-pattern>
+  </servlet-mapping> -->
+  <servlet-mapping>
+  	<servlet-name>ErrorServlet</servlet-name>
+  	<url-pattern>/ErrorServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>ListServlet</servlet-name>
+  	<url-pattern>/ListServlet</url-pattern>
+  </servlet-mapping>
+  <error-page>
+    <!-- Missing login -->
+    <error-code>401</error-code>
+    <location>/erreur</location>
+  </error-page>
+  <error-page>
+    <!-- Forbidden access -->
+    <error-code>403</error-code>
+    <location>/erreur</location>
+  </error-page>
+  <error-page>
+    <!-- Missing resource -->
+    <error-code>404</error-code>
+    <location>/erreur</location>
+  </error-page>
+  <error-page>
+    <!-- Uncaught exception -->
+    <error-code>500</error-code>
+    <location>/erreur</location>
+  </error-page>
+  <error-page>
+    <!-- Unsupported servlet method -->
+    <error-code>503</error-code>
+    <location>/erreur</location>
+  </error-page>
+</web-app>

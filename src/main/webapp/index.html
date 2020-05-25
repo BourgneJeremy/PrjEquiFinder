@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>EquiFinder</title>
+	<link rel="stylesheet" href="public/css/style.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="./config/config.js"></script>
+	<!-- Custom styles -->
+    <link href="public/libraries/dragndrop/dist/css/jquery.dm-uploader.min.css" rel="stylesheet">
+    <!-- lighviewer -->
+    <link type="text/css" rel="stylesheet" href="./public/libraries/lightviewer/dist/css/lightgallery.css" />
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #ffe6e6;">
+	  	<a class="navbar-brand" href="/EquiFinder/" id="nav-title"></a>
+	  	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation"
+	  	 	hidden>
+	    </button>
+	    <div class="navbar navbar-expand" id="navbarText">
+	      <ul class="navbar-nav mr-auto">
+	        <li class="nav-item">
+	      	  <a class="nav-link" href="/EquiFinder/">
+	            <i class="fas fa-home"></i>
+	        	<span class="ml-1" id="nav-home"></span>
+	          </a>
+	        </li>
+	        <li class="nav-item">
+	          <a class="nav-link" href="/EquiFinder/ajouter">
+	            <i class="fas fa-plus"></i>
+	        	<span class="ml-1" id="nav-add"></span>
+	          </a>
+	        </li>
+	        <li class="nav-item">
+	          <a class="nav-link" href="/EquiFinder/rechercher">
+	        	<i class="fas fa-search"></i>
+	        	<span class="ml-1" id="nav-find"></span>
+	          </a>
+	        </li>
+	      </ul>
+	    </div>
+	</nav>
+	
+	<div id="homePage"></div>
+	
+	<div id="addPage"></div>
+	
+	<div id="findPage"></div>
+	
+	<div id="galleryPage"></div>
+	
+	<div class="footer">
+	    <p id="footer-text"></p>
+	</div>
+	
+	<!-- i18n library -->
+	<script src="./public/libraries/i18n/i18n.js"></script>
+	<script src="./public/libraries/i18n/lang.js" type="module"></script>
+	
+	<!-- BASIC LIBRARIES -->
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+	<!-- TEMPLATE SCRIPT -->
+	<script src="./views/templates/main.js" type="module"></script>
+	
+	<!-- PAGINATION -->
+	<script src="https://kit.fontawesome.com/20e3694902.js" crossorigin="anonymous"></script>
+	<script src="./public/list/pagination.js" type="module"></script>
+	
+	<!-- COMMON DMUPLOADER -->
+	<script src="./public/libraries/dragndrop/dist/js/jquery.dm-uploader.min.js"></script>
+
+	<!-- ADD SCRIPTS -->
+	<script src="./public/add/dragndrop/dragdrop-ui.js" type="module" charset="utf-8"></script>
+   	<script src="./public/add/dragndrop/dragdrop-config.js" type="module" charset="utf-8"></script>
+    
+     <!-- FIND SCRIPTS -->
+    <script src="./public/find/dragndrop/dragdrop-ui.js" type="module"></script>
+   	<script src="./public/find/dragndrop/dragdrop-config.js" type="module"></script>
+   
+    <script src="./public/libraries/lightviewer/dist/js/lightgallery.js"></script>
+    <script src="./public/libraries/lightviewer/dist/modules/lg-zoom.js"></script>
+    <script src="./public/libraries/lightviewer/dist/modules/lg-fullscreen.js"></script>
+</body>
+</html>
